@@ -26,7 +26,7 @@ func ParseCmd() *Cmd {
 	cmd := &Cmd{}
 	flag.Usage = PrintUsage
 	flag.BoolVar(&cmd.HelpFlag, "help", false, "输出帮助信息")
-	flag.BoolVar(&cmd.HelpFlag, "?", false, "输出帮助信息")
+	//flag.BoolVar(&cmd.HelpFlag, "?", false, "输出帮助信息")
 	flag.BoolVar(&cmd.VersionFlag, "version", false, "输出相应的版本且退出")
 	flag.StringVar(&cmd.CpOption, "classpath", "", "classpath")
 	flag.StringVar(&cmd.CpOption, "cp", "", "classpath")
